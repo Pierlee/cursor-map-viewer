@@ -1,0 +1,38 @@
+/* Sidebar */
+.container{
+  display: flex;
+  height: 100vh;
+}
+aside {
+  background: rgb(213, 213, 213);
+  padding: 20px;
+  width: 200px;
+  position: fixed;
+  top: 100px;
+  height: 100%;
+}
+aside label{
+  margin-top: 10px;
+  display: block;
+}
+aside button {
+  background-color: #004a8f;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+aside button:hover{
+  background-color: #270065;
+  cursor: pointer;
+}
+aside input, aside select {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin-top: 5px;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  border-radius: 5px;
+}
