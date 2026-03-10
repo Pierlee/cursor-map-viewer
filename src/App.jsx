@@ -5,22 +5,82 @@ import Sidebar from "./Components/Sidebar/Sidebar"
 
 function App() {
   const initialFilters = {
+    // =========================
+    // TERRITÓRIO
+    // =========================
+  
+    // Municípios
+    cd_mun: '',
+    nm_mun: '',
+    sigla_uf: '',
+    nm_uf: '',
+  
+    // Biomas
+    cd_bioma: '',
+    bioma: '',
+  
+    // =========================
+    // OCUPAÇÃO HUMANA
+    // =========================
+  
+    // CAR
     cod_imovel: '',
     municipio: '',
     uf: '',
     area: '',
-    // campos de PRODES
-    state: '',
-    image_date: '',
-    year: '',
-    uuid: '',
-    // campos tis
+  
+    // Terras Indígenas
     terrai_cod: '',
     terrai_nom: '',
     etnia_nome: '',
     municipio_: '',
     uf_sigla: '',
     fase_ti: '',
+  
+    // =========================
+    // MONITORAMENTO
+    // =========================
+  
+    // PRODES
+    state: '',
+    image_date: '',
+    year: '',
+    uuid: '',
+    source: '',
+    main_class: '',
+    source: '',
+    main_class: '',
+  
+    // MapBiomas
+    codealerta: '',
+    fonte: '',
+    estado: '',
+    anodetec: '',
+    vpressao: '',
+  
+    // =========================
+    // FISCALIZAÇÃO
+    // =========================
+  
+    // Embargos IBAMA
+    numero_tad: '',
+    sig_uf: '',
+    nom_munici: '',
+    status_tad: '',
+    tipo_termo: '',
+  
+    // =========================
+    // PROTEÇÃO AMBIENTAL
+    // =========================
+  
+    // UCs Federais
+    cnuc: '',
+    nomeuc: '',
+    siglacateg: '',
+    grupouc: '',
+    ufabrang: '',
+    biomaibge: '',
+    criacaoano: '',
   }
   const [activeLayer, setActiveLayer] = useState('cars')
   const [filtersDraft, setFiltersDraft] = useState(initialFilters)
