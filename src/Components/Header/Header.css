@@ -1,13 +1,48 @@
 /* Cabeçalho */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1E8C59;
-  color: white;
-  height: 100px;
+.app-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: var(--header-height);
+  padding: 0 20px;
+
+  background-color: #1E8C59; /* keep same color */
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.app-header__inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 80px;
+  }
+  .app-header {
+    padding: 0 28px;
+  }
+
+  .app-header__title {
+    font-size: 22px;
+  }
 }

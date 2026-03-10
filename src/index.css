@@ -4,6 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  --header-height: 72px;
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;

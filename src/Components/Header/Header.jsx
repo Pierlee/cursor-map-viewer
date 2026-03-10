@@ -2,8 +2,10 @@ import './Header.css'
 
 function Header() {
   return(
-    <header>
-    <h1>Minha primeira pagina</h1>
+    <header className="app-header">
+      <div className="app-header__inner">
+        <h1 className="app-header__title">Map Viewer</h1>
+      </div>
     </header>
   )
 }
